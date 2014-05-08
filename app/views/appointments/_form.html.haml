@@ -1,0 +1,22 @@
+= form_for :appointment, url: appointments_path do |f|
+  .field
+    = f.label :paitentType
+    = f.check_box :paitentType
+  .field
+    = f.label :firstName
+    = f.text_field :firstName
+  .field
+    = f.label :lastName
+    = f.text_field :lastName
+  .field
+    = f.label :phoneNumber
+    = f.text_field :phoneNumber
+  .field
+    = f.label :email
+    = f.text_field :email
+  .field
+    = f.label :comments
+    = f.text_area :comments
+    
+  .actions
+    = f.submit 'Save'
