@@ -1,0 +1,20 @@
+%h1= "Listing Appointments"
+
+%table
+  %tr
+    %th First Name
+    %th Last Name
+    %th Paitent Type
+    %th Phone Number
+    %th Email
+    %th Comments
+    
+
+  - @appointments.each do |appointment|
+    %tr
+      %td= appointment.first_name
+      %td= appointment.last_name
+      %td= appointment.paitent_type
+      %td= appointment.phone_number
+      %td= appointment.email
+      %td= appointment.comments
